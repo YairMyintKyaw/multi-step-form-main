@@ -1,0 +1,171 @@
+@import url("./assets/fonts/Ubuntu-Medium.ttf");
+
+:root {
+  /* primary */
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  /* neutral */
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu";
+}
+
+.mainContainer {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.slideBar {
+  flex: 1;
+  background-image: url("./assets/images/bg-sidebar-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem;
+}
+
+.formSection {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+/* slidebar */
+.step {
+}
+
+.step:first-child > .stepNum {
+  background-color: var(--Pastel-blue);
+  color: var(--Marine-blue);
+}
+
+.stepNum {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1.5px var(--Alabaster);
+  color: var(--Alabaster);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 100%;
+}
+
+.stepInfo {
+  display: none;
+}
+
+/* form section */
+.formSection > div:first-child {
+  flex: 1;
+  background-color: var(--Magnolia);
+  padding: 0 1rem;
+}
+
+.form,
+.PlanContainer {
+  background-color: var(--White);
+  padding: 1.5rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* form */
+
+.form {
+  display: none;
+}
+
+.formSection h3 {
+  color: var(--Marine-blue);
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.formSection > p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--Cool-gray);
+}
+
+.form form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+
+.form form > div > label {
+  font-size: 0.9rem;
+  font-weight: 650;
+  color: var(--Marine-blue);
+}
+
+.form form > div > input {
+  padding: 10px 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: solid 2px var(--Magnolia);
+}
+
+.form form > div > input::placeholder {
+  color: var(--Cool-gray);
+}
+
+/* plan */
+
+.plan {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border: solid 1px var(--Light-gray);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.plan > div:last-child {
+  flex: 1;
+}
+
+.buttonInDesktop {
+  display: none;
+}
+
+.buttonInMobile {
+  background-color: var(--White);
+  padding: 1rem;
+  text-align: end;
+}
+
+.buttonInMobile > .btn {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  background-color: var(--Marine-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--White);
+  border: none;
+}
