@@ -82,7 +82,8 @@
 
 .form,
 .PlanContainer,
-.Pick-add-ons {
+.Pick-add-ons,
+.Finishing-up {
   background-color: var(--White);
   padding: 1.5rem 1.2rem;
   border-radius: 1rem;
@@ -147,6 +148,7 @@
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   gap: 1rem;
+  height: 90px;
 }
 
 .plan > input {
@@ -228,6 +230,10 @@ input:checked ~ .slider::before {
 }
 
 /* Pick Add-ons */
+.Pick-add-ons {
+  display: none;
+}
+
 .pick-add-on-checkbox {
   position: relative;
   width: 20px;
@@ -247,9 +253,6 @@ input:checked ~ .slider::before {
 
 .plan:has(input:checked) .pick-add-on-checkbox i {
   display: block;
-}
-
-.plan:has(input:checked) > .pick-add-on-checkbox {
 }
 
 .Pick-add-ons-data {
@@ -273,6 +276,62 @@ input:checked ~ .slider::before {
   color: var(--Purplish-blue);
   font-size: 0.9rem;
   font-weight: 650;
+}
+
+/* finishing up */
+.subscriptionAndSelection {
+  background-color: var(--Magnolia);
+  padding: 1rem;
+}
+
+.subscriptionAndSelection > div,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem;
+}
+
+.subscriptionAndSelection > div:first-child > div {
+  color: var(--Marine-blue);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.change {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.change,
+.selectedService {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Cool-gray);
+}
+
+.cost {
+  color: var(--Marine-blue);
+  font-weight: 650;
+}
+
+.subscriptionAndSelection > div > div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.total {
+  padding: 0 0.8rem;
+}
+.total > span:first-child {
+  color: var(--Cool-gray);
+  font-weight: 700;
+}
+
+.total > span:last-child {
+  color: var(--Purplish-blue);
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .buttonInDesktop {
