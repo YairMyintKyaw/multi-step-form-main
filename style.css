@@ -83,7 +83,8 @@
 .form,
 .PlanContainer,
 .Pick-add-ons,
-.Finishing-up {
+.Finishing-up,
+.thanks {
   background-color: var(--White);
   padding: 1.5rem 1.2rem;
   border-radius: 1rem;
@@ -279,6 +280,10 @@ input:checked ~ .slider::before {
 }
 
 /* finishing up */
+.Finishing-up {
+  display: none;
+}
+
 .subscriptionAndSelection {
   background-color: var(--Magnolia);
   padding: 1rem;
@@ -332,6 +337,40 @@ input:checked ~ .slider::before {
   color: var(--Purplish-blue);
   font-weight: 700;
   font-size: 1.2rem;
+}
+
+/* thanks */
+.thanks {
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.thanks > div:first-child {
+  background-color: var(--Strawberry-red);
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.thanks > div:first-child > span {
+  box-shadow: 12px 12px rgba(133, 133, 133, 0.393);
+  border-radius: 100%;
+}
+
+.thanks > div:first-child i {
+  font-size: 2.2rem;
+  color: var(--White);
+}
+
+.thanks p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 30px;
 }
 
 .buttonInDesktop {
