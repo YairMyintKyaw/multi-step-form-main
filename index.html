@@ -13,7 +13,10 @@
     />
 
     <title>Frontend Mentor | Multi-step form</title>
-
+    <script
+      src="https://kit.fontawesome.com/a08f5d80e5.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -91,7 +94,8 @@
             <h3>Select your plan</h3>
             <p>You have the option of omonthly or yearly billing.</p>
             <div>
-              <div class="plan">
+              <label class="plan">
+                <input type="radio" name="plan" />
                 <div class="icon">
                   <img src="./assets/images/icon-arcade.svg" alt="Arcade" />
                 </div>
@@ -99,8 +103,9 @@
                   <div class="planName">Arcade</div>
                   <div class="price">$9/mo</div>
                 </div>
-              </div>
-              <div class="plan">
+              </label>
+              <label class="plan">
+                <input type="radio" name="plan" />
                 <div class="icon">
                   <img src="./assets/images/icon-advanced.svg" alt="Advanced" />
                 </div>
@@ -108,8 +113,9 @@
                   <div class="planName">Advanced</div>
                   <div class="price">$12/mo</div>
                 </div>
-              </div>
-              <div class="plan">
+              </label>
+              <label class="plan">
+                <input type="radio" name="plan" />
                 <div class="icon">
                   <img src="./assets/images/icon-pro.svg" alt="Pro" />
                 </div>
@@ -117,7 +123,7 @@
                   <div class="planName">Pro</div>
                   <div class="price">$15/mo</div>
                 </div>
-              </div>
+              </label>
               <div class="PlanDuration">
                 <span>Monthly</span>
                 <label for="durationToggle" class="toggle">
@@ -128,6 +134,49 @@
               </div>
             </div>
           </div>
+          <div class="Pick-add-ons">
+            <h3>Pick add-ons</h3>
+            <p>Add-ons help enhance your gaming experience.</p>
+            <div>
+              <label class="plan">
+                <input type="checkbox" name="plan" />
+                <div class="pick-add-on-checkbox">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <div>
+                  <div class="Pick-add-ons-name">Online Service</div>
+                  <div class="Pick-add-ons-data">
+                    Access to multiplayer games
+                  </div>
+                </div>
+                <div>+$1/mo</div>
+              </label>
+              <label class="plan">
+                <input type="checkbox" name="plan" />
+                <div class="pick-add-on-checkbox">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <div>
+                  <div class="Pick-add-ons-name">Larger storage</div>
+                  <div class="Pick-add-ons-data">Extra 1TB of cloud save</div>
+                </div>
+                <div>+$2/mo</div>
+              </label>
+              <label class="plan">
+                <input type="checkbox" name="plan" />
+                <div class="pick-add-on-checkbox">
+                  <i class="fa-solid fa-square-check"></i>
+                </div>
+                <div>
+                  <div class="Pick-add-ons-name">Customizable Profile</div>
+                  <div class="Pick-add-ons-data">
+                    Custom theme on your profile
+                  </div>
+                </div>
+                <div>+$2/mo</div>
+              </label>
+            </div>
+          </div>
 
           <div class="buttonInDesktop">
             <div class="back">Go Back</div>
@@ -135,6 +184,7 @@
           </div>
         </div>
         <div class="buttonInMobile">
+          <div class="back">Go Back</div>
           <button class="btn">Next Step</button>
         </div>
       </div>
