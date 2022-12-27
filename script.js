@@ -207,4 +207,5 @@ toggler.addEventListener("change", (e) => {
 change.addEventListener("click", () => {
   currentPage = 1;
   slideNextPage();
+  changeStep();
 });
